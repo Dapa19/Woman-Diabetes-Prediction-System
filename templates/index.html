@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Woman Diabetes Prediction</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #03346E;
+        }
+        .bg-light {
+            background-color: #1f1f1f !important;
+        }
+        .form-control {
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #555555;
+        }
+        .form-control::placeholder {
+            color: #bbbbbb;
+        }
+        .btn-dark {
+            background-color: #333333;
+            border-color: #555555;
+        }
+        .btn-dark:hover {
+            background-color: #555555;
+            border-color: #777777;
+        }
+        footer {
+            background-color: #03346E;
+        }
+        a {
+            color: #bb86fc;
+        }
+        a:hover {
+            color: #bb86fc;
+        }
+        .text-warning {
+            color: #ffbb33 !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark" style="position: fixed; width: 100%; top: 0; z-index: 1000;">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Logistic Regression Project - Woman Diabetes Prediction</span>
+        </div>
+    </nav>
+    
+    <div style="margin-top: 56px;"> <!-- Menambahkan margin untuk menghindari konten tertutupi navbar -->
+        <!-- Konten halaman Anda -->
+    </div>
+    <div class="container text-center pt-5 bg-light">
+        <h1>Woman Diabetes Prediction</h1>
+        <br>
+        <img src="{{ url_for('static', filename='assets/Diabetes-pict.jpg') }}" alt="" class="img-fluid" style="max-width: 50%;">
+        <br>
+        <br>
+        <br>
+        <form action="/display" method="post" enctype="multipart/form-data">
+            <label for="pregnancies">Number of pregnancies ever experienced : </label>
+            <input type="number" class="form-control" min="0" name="pregnancies" placeholder="Ex: 2" required>
+            <br>
+            <br>
+            <label for="Glucose">Input Glucose :</label>
+            <input type="number" class="form-control" name="Glucose" placeholder="Ex: 138" min="1" required>
+            <br>
+            <br>
+            <label for="BloodPressure">Input Blood Pressure :</label>
+            <input type="number" class="form-control" name="BloodPressure" placeholder="Ex: 62" min="1" required>
+            <br>
+            <br>
+            <label for="SkinThickness">Input Skin Thickness :</label>
+            <input type="number" class="form-control" name="SkinThickness" placeholder="Ex: 35" min="0" required>
+            <br>
+            <br>
+            <label for="Insulin">Input Insulin :</label>
+            <input type="number" class="form-control" name="Insulin" placeholder="Ex: 61" min="0" required>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="Weight">Input Weight (Kg) :</label>
+                    <input type="number" class="form-control" name="Weight" step="0.01" placeholder="Ex: 55" min="1" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Height">Input Height (M) :</label>
+                    <input type="number" class="form-control" name="Height" step="0.01" placeholder="Ex: 1.67" min="1" required>
+                </div>
+            </div>
+            <br>
+            <label for="DiabetesPedigreeFunction">Input Diabetes Pedigree Function (Range : 0.08 - 2.42) :</label>
+            <input type="number" class="form-control" name="DiabetesPedigreeFunction" step="0.01" placeholder="Ex: 0.53" min="0.08" max="2.42" required>
+            <br>
+            <br>
+            <label for="Age">Input Age :</label>
+            <input type="number" class="form-control" name="Age" placeholder="Ex: 52" min="1" required>
+            <br>
+            <p class="text-warning">*Make sure all the information above has been entered</p>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg">Predict Diabetes</button>
+            <br>
+            <br>
+        </form>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <br>
+
+    <footer class="text-white text-center py-3">
+        <div class="container">
+            <h5>My information : </h5>
+            <p class="mb-0">@auliadafa_</p>
+            <p class="mb-0"><a href="mailto:auliadafa91@gmail.com" class="text-white">auliadafa91@gmail.com</a></p>
+            <p class="mb-0"><a href="https://github.com/Dapa19" target="_blank" class="text-white">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
