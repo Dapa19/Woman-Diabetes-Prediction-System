@@ -32,7 +32,7 @@ After clicking the "Predict Diabetes" button, the system provides a prediction r
 # Contact
 For any questions or suggestions, feel free to reach out:
 
-Instagram: @auliadafa_
-Email: auliadfa91@gmail.com
-GitHub: Dapa19
+- Instagram: @auliadafa_
+- Email: auliadfa91@gmail.com
+- GitHub: Dapa19
 
