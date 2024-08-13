@@ -2,14 +2,6 @@
 ## Project Overview
 This project is a Logistic Regression-based system designed to predict whether a woman has diabetes based on several health parameters. The system is built using Python, and the front end is developed with a simple web interface to input the health data and visualize the prediction results.
 
-# Table of Contents
-Project Overview
-Features
-Technologies Used
-Dataset
-Screenshots
-Contact
-
 # Features
 - Input health data such as glucose level, blood pressure, skin thickness, insulin, BMI, and more.
 - Predict the likelihood of having diabetes.
